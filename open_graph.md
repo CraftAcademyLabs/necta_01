@@ -42,6 +42,6 @@ As an example, the following is the Open Graph protocol markup for the movie The
   </body>
 </html>
 ```
-![Star Trek Discovery Facebook Card](./images/star_trek_fb_card.png)
+![Star Trek Discovery Facebook Card](../images/star_trek_fb_card.png)
 
 More information (advanced) can be found at http://ogp.me/
