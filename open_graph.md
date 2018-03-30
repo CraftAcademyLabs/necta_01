@@ -53,4 +53,5 @@ Twitter has its own <meta> tags that are similar to the Open Graph protocol, but
 
 In practical terms, the only tag we need to add, to be in control of how Twitter displays our site is the `twitter:card` tag that specifies the card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
 
+
 More information (advanced) can be found at http://ogp.me/
