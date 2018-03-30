@@ -1,4 +1,4 @@
-## Open Graph
+## Open Graph - The Essential Meta Tags for Social Media
 In this section, we'll be adding some meta tags to your webpage to make it more easily shared on various social networks.
 
 The Open Graph Protocol is a set of tags that allows developers to give major social networks (Facebook, Twitter, Linked in...) detailed information about its pages and content. This information is used by social networks to better display a link on those pages that have been placed by the users.
@@ -52,6 +52,20 @@ Twitter card tags look similar to Open Graph tags, and are based on the same con
 Twitter has its own <meta> tags that are similar to the Open Graph protocol, but uses the `twitter:` prefix instead of `og`. As with Facebook, only a few are required, but for the sake of brevity, we can leverage the fact that Twitter allows us to substitute the Open Graph `<meta>` tags for its own.
 
 In practical terms, the only tag we need to add, to be in control of how Twitter displays our site is the `twitter:card` tag that specifies the card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
+
+```html
+<head>
+  <title>Star Trek: Discovery (TV Series 2017– )</title>
+  <meta property='og:title' content="Star Trek: Discovery (TV Series 2017– )" />
+  <meta property='og:type' content="video.tv_show" />
+  <meta property='og:image' content="https://ia.media-imdb.com/images/M/MV5BMjM3NDA1NjM1Nl5BMl5BanBnXkFtZTgwNzg5ODEzMzI@._V1_UY1200_CR96,0,630,1200_AL_.jpg" />
+  <meta property="og:url" content="http://www.imdb.com/title/tt5171438/" />
+  <meta property="og:description" content="Ten years before Kirk, Spock and the Enterprise, the USS Discovery discovers new worlds and lifeforms as one Starfleet officer learns to understand all things alien." />
+  <meta name="twitter:card" content="summary">
+  ...
+</head>
+```
+When shared, the Star Trek Discovery page on IMDB could look something like this in the Twitter feed:
 
 ![Star Trek Discovery Twitter Card](images/start_trek_twitter_card.png)
 
