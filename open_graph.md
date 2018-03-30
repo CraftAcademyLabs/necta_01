@@ -21,7 +21,7 @@ The four required properties for every page are:
 * `og:type` - The type of your object, e.g., "video.movie". Depending on the type you specify, other properties may also be required.
 * `og:image` - An image URL which should represent your object within the graph.
 * `og:url` - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".
-* (optional but good to include) `og:description` - A one to two sentence description of your object.
+* (optional but good to include) `og:description` - A short description or summary of the object. Between 2 and 4 sentences.
 
 
 As an example, the following is the Open Graph protocol markup for the movie The Rock on IMDB:
@@ -43,5 +43,14 @@ As an example, the following is the Open Graph protocol markup for the movie The
 </html>
 ```
 ![Star Trek Discovery Facebook Card](images/start_trek_fb_card.png)
+
+
+## Twitter
+
+Twitter card tags look similar to Open Graph tags, and are based on the same conventions as the Open Graph protocol.
+
+Twitter has its own <meta> tags that are similar to the Open Graph protocol, but uses the `twitter:` prefix instead of `og`. As with Facebook, only a few are required, but for the sake of brevity, we can leverage the fact that Twitter allows us to substitute the Open Graph `<meta>` tags for its own.
+
+In practical terms, the only tag we need to add, to be in control of how Twitter displays our site is the `twitter:card` tag that specifies the card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
 
 More information (advanced) can be found at http://ogp.me/
