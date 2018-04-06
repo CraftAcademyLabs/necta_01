@@ -21,6 +21,17 @@ Quite often, when you read through the code of an HTML document, you'll find spe
 
 Meta tags hold metadata about the page. Metadata takes many forms and can include keywords, authors, descriptions, etc. Here are a few notable inclusions:
 
+### viewport
+A `<meta>` viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+
+The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
+
+```
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+```
+
 ### charset
 The `charset` setting tells the browser which character encoding to use.
 

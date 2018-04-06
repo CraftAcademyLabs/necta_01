@@ -1,0 +1,184 @@
+<style>
+  .tag {
+    width: 720px;
+    font-family: Arial;
+    font-size: 11px;
+    height: 15px;
+    float: center;
+    padding: 5px;
+    border: #006600;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+
+  .terminology ul {
+    padding-top: 20px;
+    position: relative;
+
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+  }
+
+  .terminology li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+
+
+
+  .terminology li::before,
+  .terminology li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 30px;
+  }
+
+  .terminology li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+  }
+
+
+  .terminology li:only-child::after,
+  .terminology li:only-child::before {
+    display: none;
+  }
+
+
+  .terminology li:only-child {
+    padding-top: 0;
+  }
+
+  .terminology li:first-child::before,
+  .terminology li:last-child::after {
+    border: 0 none;
+  }
+
+  .terminology li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+  }
+
+  .terminology li:first-child::after {
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+  }
+
+  .terminology ul ul::before {
+    content: '';
+    position: absolute;
+    top: -10;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 30px;
+  }
+
+  .terminology li p {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+
+
+  .terminology li p:hover,
+  .terminology li p:hover+ul li p {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+  }
+
+  .terminology li p:hover+ul li::after,
+  .terminology li p:hover+ul li::before,
+  .terminology li p:hover+ul::before,
+  .terminology li p:hover+ul ul::before {
+    border-color: #810d05;
+  }
+  .terminology .element {
+    color: grey;
+  }
+
+  .terminology .attribute {
+    color: #f24437;
+  }
+
+  .terminology .value {
+    color: blue;
+  }
+
+
+</style>
+
+<div class="terminology">
+  <div class="tag">
+    <span class="element">&lt;a </span>
+    <span class="attribute">href="Tutorialspark.com"</span>
+    <span class="element">&gt; </span>
+    <span class="value">Tutorials Park </span>
+    <span class="element">&lt;/a&gt; </span></p>
+
+  </div>
+  <ul>
+    <li>
+      <p>
+        <span class="element">&lt;a </span>
+        <span class="attribute">href="Tutorialspark.com"</span>
+        <span class="value">&gt; </span> <span style="color:#a946f5">Tutorials Park </span>
+        <span class="element">&lt;/a&gt; </span></p>
+      <ul>
+        <li>
+          <p>Element:<br><span style="color:grey;">&lt;a&gt; &lt;/a&gt; </span> </p>
+          <ul>
+            <li>
+              <p>Start Tag:<br><span style="color:#689324">&lt;a&gt;</span></p>
+
+            </li>
+            <li>
+              <p>End Tag:<br><span style="color:#689324">&lt;/a&gt;<span> </span></span>
+              </p>
+
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <p>Attribute:<br> <span style="color:#f24437">href="Tutorialspark.com"</span> </p>
+        </li>
+        <li>
+          <p>Content:<br><span style="color:#a946f5">Tutorials Park </span>.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
