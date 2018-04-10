@@ -36,27 +36,66 @@ This will display the description when the image cannot be rendered.
 ## The Body Part 2 - adding some structure
 
 So we have added some basic content. Now it is time to give our page some structure.
+We will start by adding an `<header>` to our document.
 
-`<footer>` represents a group of end content for a page.
+A `<header>`tag represents a group of introductory content. If it is a child of `<body>` it defines the global header of a webpage, but if it's a child of an `<article>` or `<section>`it defines a specific header for that section.
 
-`<header>`tag represents a group of introductory content. If it is a child of <body> it defines the global header of a webpage, but if it's a child of an <article> or <section>.
+```
+<header>
+</header>
+```
 
-`<footer>`tag
+We will also add a`<footer>` which will contain end content for the page.
+```
+<footer>
+</footer>
+```
 
-`<main>`tag is for content unique to this page. Use <main> only once per page, and put it directly inside <body>. Ideally this shouldn't be nested within other elements.
-    `<article>`tag encloses a block of related content that makes sense on its own without the rest of the page (e.g. a single blog post.)
-      `<h2>`tag
-      `<p>`tag
-      `<h3>`tag
-      `<p>`tag
+`<main>`tag is for content unique to this page. Use `<main>` only once per page, and put it directly inside `<body>`. Ideally this shouldn't be nested within other elements.
 
-`<div>`tag
-`<span>`tag
+```
+<main>
+</main>
+```
 
-## The Body Part 3 - navigation and listing
+`<article>` tag encloses a block of related content that makes sense on its own without the rest of the page for example an article or blog post.
+```
+<main>
+
+  <article>
+  </article>
+
+</main>
+```
+
+Lets add some content in this block.
+
+```
+<main>
+
+  <article>
+    <h2> Heading </h2>
+
+    <p> Some text </p>
+
+    <h3> Subsection </h3>
+
+    <p> Some more text </p>
+  </article>
+
+</main>
+```
+
+
+
+## The Body Part 3 - navigation, listing & non-semantic wrappers
 
 `<nav>` contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
 
 `<ul>` tag
 `<ol>`tag
 `<li>` tag
+
+
+`<div>`tag
+`<span>`tag
