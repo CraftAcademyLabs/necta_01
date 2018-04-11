@@ -88,7 +88,7 @@ Lets add some content in this block.
      
 
 
-## The Body Part 3 - navigation, listing & non-semantic wrappers 
+## The Body Part 3 - navigation, list & form 
 
 So we want our users/visitors to be able to navigate our site. We will make that possible by adding a navbar using the `<nav>` tag, which contains the main navigation functionality for the page. 
 
@@ -98,7 +98,7 @@ So we want our users/visitors to be able to navigate our site. We will make that
     </nav>
 ``` 
 
-So we now have a navbar and we want to fill it with some links to give it some purpose. To do that we are going to use the `<ul>`tag, the `<li>` tag and the `<a>`tag. 
+So we now have a navbar and we want to fill it with some links to give it some purpose. To do that we are going to use the `<ul>` tag, the `<li>` tag and the `<a>`tag. 
 
  The `<ul>` tag for wrapping an unordered list. Unordered lists are used to mark up lists of items for which the order of the items doesn't matter. If the order do matter you will use the `<ol>` tag instead. But for now lets go use the `<ul>` tag. 
  The `<li>` tag List item 
@@ -119,9 +119,9 @@ So we now have a navbar and we want to fill it with some links to give it some p
 
 
 Another common object you can find in a navigation bar is a search form. 
+
 `<form>` tag 
 `<input>`tag   
-
 
 
 ```
@@ -139,8 +139,4 @@ Another common object you can find in a navigation bar is a search form.
        </form>
     </nav>
 ```
-
-
-
-
 
