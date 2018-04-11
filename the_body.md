@@ -100,9 +100,9 @@ So we want our users/visitors to be able to navigate our site. We will make that
 
 So we now have a navbar and we want to fill it with some links to give it some purpose. To do that we are going to use the `<ul>`tag, the `<li>` tag and the `<a>`tag. 
 
- The `<ul>` tag Wrapper for unordered list. Unordered lists are used to mark up lists of items for which the order of the items doesn't matter. 
+ The `<ul>` tag for wrapping an unordered list. Unordered lists are used to mark up lists of items for which the order of the items doesn't matter. If the order do matter you will use the `<ol>` tag instead. But for now lets go use the `<ul>` tag. 
  The `<li>` tag List item 
- The `<a>` tag anchor tag will make the piece of text it wraps around into a hyperlink
+ The `<a>` tag anchor tag will make the piece of text it wraps around into an hyperlink.
  href: This attribute specifies as its value the web address that you want the link to point to; where the browser navigates to when the link is clicked. For example, href="https://www.craftacademy.se/"
 
 ```
