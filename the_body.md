@@ -36,29 +36,29 @@ This will display the description when the image cannot be rendered.
 ## The Body Part 2 - adding some structure
 
 So we have added some basic content. Now it is time to give our page some structure.
-We will start by adding an `<header>` to our document.
+We will start by adding an `<header>` to our document. 
 
 A `<header>`tag represents a group of introductory content. If it is a child of `<body>` it defines the global header of a webpage, but if it's a child of an `<article>` or `<section>`it defines a specific header for that section.
 
 ```
-<header>
+<header> 
 </header>
 ```
 
 We will also add a`<footer>` which will contain end content for the page.
 ```
-<footer>
+<footer> 
 </footer>
 ```
 
 `<main>`tag is for content unique to this page. Use `<main>` only once per page, and put it directly inside `<body>`. Ideally this shouldn't be nested within other elements.
-
+    
 ```
 <main>
 </main>
 ```
 
-`<article>` tag encloses a block of related content that makes sense on its own without the rest of the page for example an article or blog post.
+`<article>` tag encloses a block of related content that makes sense on its own without the rest of the page for example an article or blog post. 
 ```
 <main>
 
@@ -68,34 +68,82 @@ We will also add a`<footer>` which will contain end content for the page.
 </main>
 ```
 
-Lets add some content in this block.
+Lets add some content in this block. 
 
 ```
 <main>
 
   <article>
     <h2> Heading </h2>
-
+    
     <p> Some text </p>
-
+    
     <h3> Subsection </h3>
-
+      
     <p> Some more text </p>
   </article>
 
 </main>
 ```
+     
+
+
+## The Body Part 3 - navigation, listing & non-semantic wrappers 
+
+So we want our users/visitors to be able to navigate our site. We will make that possible by adding a navbar using the `<nav>` tag, which contains the main navigation functionality for the page. 
+
+```
+    <nav>
+
+    </nav>
+``` 
+
+So we now have a navbar and we want to fill it with some links to give it some purpose. To do that we are going to use the `<ul>`tag, the `<li>` tag and the `<a>`tag. 
+
+ The `<ul>` tag Wrapper for unordered list. Unordered lists are used to mark up lists of items for which the order of the items doesn't matter. 
+ The `<li>` tag List item 
+ The `<a>` tag anchor tag will make the piece of text it wraps around into a hyperlink
+ href: This attribute specifies as its value the web address that you want the link to point to; where the browser navigates to when the link is clicked. For example, href="https://www.craftacademy.se/"
+
+```
+    <nav>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+    </nav>
+``` 
+
+
+Another common object you can find in a navigation bar is a search form. 
+`<form>` tag 
+`<input>`tag   
 
 
 
-## The Body Part 3 - navigation, listing & non-semantic wrappers
+```
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-`<nav>` contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
 
-`<ul>` tag
-`<ol>`tag
-`<li>` tag
+       <form>
+         <input type="search" name="s" placeholder="Search">
+         <input type="submit" value="Go">
+       </form>
+    </nav>
+```
 
 
-`<div>`tag
-`<span>`tag
+
+
+`<div>` tag is a block level non-semantic element, which you should only use if you can't think of a better semantic block element to use, or don't want to add any specific meaning. For example, imagine a shopping cart widget that you could choose to pull up at any point during your time on an e-commerce site:
+
+
+`<span>`tag is an inline non-semantic element, which you should only use if you can't think of a better semantic text element to wrap your content, or don't want to add any specific meaning. For example:
