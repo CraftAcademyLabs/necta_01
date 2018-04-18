@@ -1,7 +1,7 @@
 
 ## JS part 1 - introduction 
 
-JavaScript is a scripting or programming language that allows you to implement complex things on web pages. 
+JavaScript is a programming language that allows you to implement complex things on web pages. 
 
 
 
@@ -49,7 +49,7 @@ HTML file
 
 
 JS file
-
+0
 ```
 var inputValue = '';
 var myButton = document.getElementById('myButton');
