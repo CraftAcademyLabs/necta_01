@@ -1,6 +1,10 @@
 ## CSS Basic Layout - connected to basic_css.css
 
-Grid 
+We are going to add some CSS elements in order to style our web site. CSS elements are entities defined by CSS authors that contain specific values to be reused throughout a document.
+
+We have already added some HTML and now we want to style it. Let's start with the basics. We have already prepared a stylesheet with basic CSS for you, let's have a look at it. (Go through and let them test out different fonts and font sizes.)
+
+Go to basic_css.css and try diffrent: 
 
 Fonts 
 
@@ -17,11 +21,6 @@ Basic CSS `<link rel="stylesheet" href="basic_css.css">`
 
 
 ## CSS Elements - connected to scrimba_css.css and scrimba_css.html
-
-
-We are going to add some CSS elements in order to style our web site. CSS elements are entities defined by CSS authors that contain specific values to be reused throughout a document.
-
-We have already added some HTML and now we want to style it. Let's start with the basics. We have already prepared a stylesheet with basic CSS for you, let's have a look at it. (Go through and let them test out different fonts and font sizes.)
 
 
 Now we want our web site to pop a little bit more. Let's add some colours. 
